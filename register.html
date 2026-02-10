@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Registration</title>
+
+    <link rel="stylesheet"
+
+          href="register.css">
+<style>
+          body
+            {
+                background-color: aquamarine;
+            }
+          </style>
+</head>
+ 
+
+<body>
+
+    <div class="main">
+<h1>HostelHub
+        </h1>
+
+        <h3>Register Here</h3>
+
+        
+           
+
+           <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+
+          <label>Mobile:</label>
+           <input type="text" id="mobile" placeholder="mobile no." required>
+
+           <label>Email:</label>
+           <input type="email" id="email"  placeholder="enter email Id." required>
+
+           <label>Username:</label>
+              <input type="text" id="username" placeholder="Username" required>
+
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter your Password" required>
+
+            <div class="wrap">
+
+                <button type="button" onclick="register()">
+                Register
+
+
+                </button>
+                <img src="reg.jpg" width="140" height="140">
+               
+            </div>
+
+        </form>         
+  
+                <p>
+   If you Already Register then No need again.
+    <a href="login.html">Login here</a>
+</p>
+    </div>
+
+   <script>
+function register() {
+
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if (user !== "" && pass !== "") {
+        alert("Registration Successful!");
+        window.location.href = "login.html";
+    } else 
+    {
+        alert("Please enter Username and Password");
+    }
+}
+</script>
+</body>
+ 
+
+</html>
